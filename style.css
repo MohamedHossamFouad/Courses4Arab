@@ -5,14 +5,17 @@
 
 }
 header{
-    margin-bottom: 100px;
     background-color: #3d4a59;
     color: white;
     border-radius: 0 50px ;
+
+    margin-bottom: 100px;
+
 }
 header h1{
     margin-bottom: 35px;
 }
+
 .parent{
     display: flex;
     padding-bottom: 35px;
@@ -53,6 +56,7 @@ h1{
 }
 section{
     margin-bottom: 100px;
+
     box-shadow: 5px 5px  25px rgb(0, 0, 0);
     width:89%;
     border-radius: 25px;
@@ -95,6 +99,11 @@ article h2{
 .facebook{
     background-color: royalblue;
 }
+
+.mycard{
+    margin: auto;
+    padding: auto;
+}
 footer{
     text-align: center;
 }
@@ -106,11 +115,11 @@ footer{
     border-radius: 25px 0;
 }
 .follow{
-    box-shadow:05px 30px0rgb(000/25%);
+    box-shadow:0 5px 30px 0 rgb(000/25%);
     border-radius:10px;
     padding:16px;
     text-align:center;
-    margin: 0 auto 10px;
+    margin:  0;
     border-top:6px solid#3d4a59;
     opacity:0.9;
     width:99%;
@@ -126,6 +135,72 @@ padding: 4px 10px;
     padding: 5px 12px;
 
 }
+.bc{
+    background-color: red ;
+}
+
+.aaa{
+    background: green !important;
+}
+#bbb{
+    background: blue;
+}
+.secs{
+    display: none;
+    background-color: red;
+    position: fixed;
+    top: 0;
+    bottom: 100px;
+    right: 0;
+    left: 0;
+}
+.container{
+    width: 100%;
+    text-align: center;
+    background-color: #3d4a59;  
+    border-radius: 25px;  
+    margin: 25px;
+    padding: 15px;
+    color: white;
+
+    
+}
+
+.dark header{
+    background-color: #9e4673;
+
+}
+.dark {
+    background-color: #443334;
+    color: white;
+}
+.dark h1{
+    background-color: white;
+    color: #9e4673;
+}
+.dark section{
+    background-color: #9e4673;
+    color: white;
+    box-shadow: 5px 5px  25px rgb(239, 239, 239);
+}
+.dark p{
+    color: black;
+}
+.dark .design{
+    background-color: #9e4673;
+    color: white;
+
+}
+.dark .follow{
+    border-top: #9e4673 solid 3px;
+    color: white;
+}
+
+
+
+
+
+
 
 
 
