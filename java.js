@@ -91,8 +91,37 @@ buyBtn2.addEventListener("click",
 )
 */
 
+const addCard =document.getElementById("addcard")
+const prodaucts =document.querySelector(".prodaucts")
+
+const newProucat = `<div class="card mycard " style="width: 18rem;">
+<img src="images/screencapture-127-0-0-1-5500-1-HTML-CSS-Fundamentals-2022-07-01-19_12_50.png" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title">Card title 1 </h5>
+  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <a  id="popo" href="#" class="btn btn-primary mybtn cardbtn">Buy</a>
+</div>
+</div>`
 
 
+// when i click on Add Card button
+prodaucts.addEventListener("click",
+(eo) => {
+  if(eo.target.className=="btn btn-primary mybtn cardbtn") {
+    kayan.style.display = "none";
+    sec.style.display = "block";
+    cont.style.display = "block";
+    eo.preventDefault();
+  }
+  }
+)
+
+addCard.addEventListener("click",
+(eo) => {
+    prodaucts.style.border =  "red solid 2px";
+    prodaucts.innerHTML += newProucat;
+  }
+)
 
 //to change theme of website
 
@@ -104,24 +133,6 @@ modeChange.addEventListener("click",
   body.classList.toggle("dark");
 }
 )
-
-
-
-const myName= "Mohamed "
-const myAge= "23"
-
-const myArr =[ "Mohamed Hossam" , 23];
-//console.table(myArr)
-//console.log(`Welcome : ${myArr[0]} \n Your Age is : ${myArr[1]}`)
-
-//console.log( "Welcome : "+ myName + "\nYour Age is :  "+ myAge);
-
-
-//console.log(` Welcome : ${myName} \n Your Age is : ${myAge}`);
-
-
-
-
 
 
 /*const h1= document.getElementsByTagName("h1");
@@ -138,26 +149,6 @@ arrH1.forEach((item) => {
 });
 
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 
@@ -176,45 +167,5 @@ btnPop.addEventListener("click",
 )
 */
 
-
-//console.log(buyCard);
-
-
-
-const myHeader = document.querySelector(".myHeader");
-
-//console.log(myHeader);
-// myHeader.remove();
-
-
-
-
-
-/*function printHello() {
-  for (let x = 0; x < 10; x++) {
-      console.log("Hello "+x);
-      
-  }
-}
-printHello();
-*/
-
-
-
-
-
-
-/*
-const tite = () => {
-  myHeader.append(myTitle)
-  myTitle.classList.add("bc")
-  myTitle.innerText = "Hello World";
-  myTitle.id = "aaa";
-  myTitle.setAttribute("id", "bbb");
-}
-tite()
-
-
-*/
 
 

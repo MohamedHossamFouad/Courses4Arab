@@ -94,7 +94,7 @@ section {
   margin-top: 50px;
 }
 
-
+ 
 
 .articals {
   display: flex;
@@ -239,6 +239,9 @@ footer {
 }
 a {
   text-decoration: none;
+}
+.dark .card-title {
+  color: #9e4673;
 }
 
 
